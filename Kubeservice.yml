@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bmp-service-order-management-business-service
+  namespace: dtag-dev
+  labels:
+    app: bmp-service-order-management-business-service
+    version: latest
+spec:
+  type: NodePort
+  externalTrafficPolicy: Cluster
+  ports:
+  - port: 18928
+    nodePort: 30928
+    targetPort: 9011
+    protocol: TCP
+  selector:
+    app: bmp-service-order-management-business-service
+    version: latest

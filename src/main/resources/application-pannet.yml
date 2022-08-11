@@ -1,0 +1,19 @@
+apiVersion: 1.0.0
+logging:
+    level:
+        com:
+            assignment:
+                springboot:
+                    mongo: DEBUG
+    pattern:
+        console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
+publishStubMessage: http://172.29.1.106:30925/rest/message
+server:
+    port: 9011
+serviceOrderManagementServiceURL: http://172.29.1.106:30928/serviceOrderManagement/v1/serviceOrder
+spring:
+    data:
+        mongodb:
+            database: BMP_SERVICEORDERMANAGEMENT
+            host: 172.29.1.114
+            port: 27017
