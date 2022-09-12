@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.dtag.bm.process.service_order_management.serviceOrder</groupId>
 	<artifactId>bmp-service-order-management-business-service</artifactId>
-	<version>1.0</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>bmp-service-order-management-business-service</name>
 	<description>Service Order Management Service</description>
 
